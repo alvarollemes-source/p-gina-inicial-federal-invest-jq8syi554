@@ -1,0 +1,27 @@
+Analise integralmente o repositório conectado antes de modificar qualquer arquivo.
+
+Este é o projeto Federal Invest Trustee, construído com React, TypeScript, TanStack Start, Supabase e componentes Radix UI. Preserve a arquitetura existente, as rotas baseadas em arquivos, as migrations do Supabase, as regras de autenticação e permissões, e todos os fluxos já funcionais.
+
+Leia primeiro, nesta ordem:
+1. README.md
+2. AGENTS.md
+3. package.json
+4. src/routes/README.md
+5. .lovable/plan.md
+6. src/routes/_authenticated/
+7. src/lib/
+8. src/integrations/supabase/
+9. supabase/migrations/
+
+Regras obrigatórias:
+- Não reconstruir o projeto do zero.
+- Não substituir páginas existentes por versões simplificadas.
+- Não alterar nomes de rotas, tabelas, colunas ou permissões sem necessidade explícita.
+- Não editar manualmente src/routeTree.gen.ts.
+- Não remover funcionalidades existentes.
+- Não inventar dados financeiros, valores, boletos, códigos de barras ou informações de clientes.
+- Antes de implementar qualquer pedido, explique quais arquivos serão alterados e preserve o restante do sistema.
+- Não expor SUPABASE_SERVICE_ROLE_KEY, LOVABLE_API_KEY ou outras credenciais no código do cliente.
+- Não fazer force push, rebase, squash ou reescrita de commits publicados, conforme AGENTS.md.
+
+Após a análise, apresente um resumo objetivo da arquitetura, dos módulos existentes, das integrações e das variáveis de ambiente necessárias. Não faça alterações até receber uma solicitação específica.

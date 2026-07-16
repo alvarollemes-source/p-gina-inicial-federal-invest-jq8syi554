@@ -1,131 +1,29 @@
-# Projeto Criado com o Skip
+# Federal Invest Trustee
 
-Este projeto foi criado de ponta a ponta com o [Skip](https://goskip.dev).
+Plataforma de gestão operacional e financeira da Federal Invest, desenvolvida em React, TypeScript, TanStack Start e Supabase.
 
-## 🚀 Stack Tecnológica
+## Principais módulos
 
-- **React 19** - Biblioteca JavaScript para construção de interfaces
-- **Vite** - Build tool extremamente rápida
-- **TypeScript** - Superset tipado do JavaScript
-- **Shadcn UI** - Componentes reutilizáveis e acessíveis
-- **Tailwind CSS** - Framework CSS utility-first
-- **React Router** - Roteamento para aplicações React
-- **React Hook Form** - Gerenciamento de formulários performático
-- **Zod** - Validação de schemas TypeScript-first
-- **Recharts** - Biblioteca de gráficos para React
+- Autenticação, usuários, funções e permissões
+- Empresas
+- Upload, leitura, validação e histórico de boletos
+- Pagamentos e pagamentos manuais
+- Documentos financeiros
+- Geração e acompanhamento de CNAB
+- Retornos bancários e configurações bancárias
+- Conversor XLS para OFX
+- Separação de comprovantes em PDF
+- Relatórios, dashboard e logs
 
-## 📋 Pré-requisitos
+## Configuração
 
-- Node.js 18+
-- npm
+1. Instale as dependências com `bun install`.
+2. Copie `.env.example` para `.env` somente no ambiente local.
+3. Configure as variáveis no provedor de hospedagem/SKIP. Não publique `.env`.
+4. Execute `bun run dev` para desenvolvimento.
 
-## 🔧 Instalação
+## Segurança
 
-```bash
-npm install
-```
-
-## 💻 Scripts Disponíveis
-
-### Desenvolvimento
-
-```bash
-# Iniciar servidor de desenvolvimento
-npm start
-# ou
-npm run dev
-```
-
-Abre a aplicação em modo de desenvolvimento em [http://localhost:5173](http://localhost:5173).
-
-### Build
-
-```bash
-# Build para produção
-npm run build
-
-# Build para desenvolvimento
-npm run build:dev
-```
-
-Gera os arquivos otimizados para produção na pasta `dist/`.
-
-### Preview
-
-```bash
-# Visualizar build de produção localmente
-npm run preview
-```
-
-Permite visualizar a build de produção localmente antes do deploy.
-
-### Linting e Formatação
-
-```bash
-# Executar linter
-npm run lint
-
-# Executar linter e corrigir problemas automaticamente
-npm run lint:fix
-
-# Formatar código com Oxfmt
-npm run format
-```
-
-## 📁 Estrutura do Projeto
-
-```
-.
-├── src/              # Código fonte da aplicação
-├── public/           # Arquivos estáticos
-├── dist/             # Build de produção (gerado)
-├── node_modules/     # Dependências (gerado)
-└── package.json      # Configurações e dependências do projeto
-```
-
-## 🎨 Componentes UI
-
-Este template inclui uma biblioteca completa de componentes Shadcn UI baseados em Radix UI:
-
-- Accordion
-- Alert Dialog
-- Avatar
-- Button
-- Checkbox
-- Dialog
-- Dropdown Menu
-- Form
-- Input
-- Label
-- Select
-- Switch
-- Tabs
-- Toast
-- Tooltip
-- E muito mais...
-
-## 📝 Ferramentas de Qualidade de Código
-
-- **TypeScript**: Tipagem estática
-- **Oxlint**: Linter extremamente rápido
-- **Oxfmt**: Formatação automática de código
-
-## 🔄 Workflow de Desenvolvimento
-
-1. Instale as dependências: `npm install`
-2. Inicie o servidor de desenvolvimento: `npm start`
-3. Faça suas alterações
-4. Verifique o código: `npm run lint`
-5. Formate o código: `npm run format`
-6. Crie a build: `npm run build`
-7. Visualize a build: `npm run preview`
-
-## 📦 Build e Deploy
-
-Para criar uma build otimizada para produção:
-
-```bash
-npm run build
-```
-
-Os arquivos otimizados serão gerados na pasta `dist/` e estarão prontos para deploy.
+- O repositório deve permanecer privado.
+- Nunca envie `SUPABASE_SERVICE_ROLE_KEY` ou `LOVABLE_API_KEY` para o GitHub.
+- Consulte `AGENTS.md` antes de alterar o histórico Git, pois o projeto possui integração com Lovable.

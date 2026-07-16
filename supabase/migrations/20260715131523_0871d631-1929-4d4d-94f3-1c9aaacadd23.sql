@@ -1,0 +1,4 @@
+CREATE POLICY "boletos owner read" ON storage.objects FOR SELECT TO authenticated USING (bucket_id = 'boletos' AND (auth.uid()::text = (storage.foldername(name))[1] OR public.is_federal(auth.uid())));
+CREATE POLICY "boletos owner insert" ON storage.objects FOR INSERT TO authenticated WITH CHECK (bucket_id = 'boletos' AND auth.uid()::text = (storage.foldername(name))[1]);
+CREATE POLICY "boletos owner update" ON storage.objects FOR UPDATE TO authenticated USING (bucket_id = 'boletos' AND auth.uid()::text = (storage.foldername(name))[1]);
+CREATE POLICY "boletos owner delete" ON storage.objects FOR DELETE TO authenticated USING (bucket_id = 'boletos' AND auth.uid()::text = (storage.foldername(name))[1]);

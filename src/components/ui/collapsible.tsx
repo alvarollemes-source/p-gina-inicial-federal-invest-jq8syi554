@@ -1,10 +1,11 @@
-/* Collapsible Component primitives - A component that displays a collapsible (a component that can be collapsed and expanded) - from shadcn/ui (exposes Collapsible, CollapsibleTrigger, CollapsibleContent) */
-import * as CollapsiblePrimitive from '@radix-ui/react-collapsible'
+"use client";
 
-const Collapsible = CollapsiblePrimitive.Root
+import * as CollapsiblePrimitive from "@radix-ui/react-collapsible";
 
-const CollapsibleTrigger = CollapsiblePrimitive.CollapsibleTrigger
+const Collapsible = CollapsiblePrimitive.Root;
 
-const CollapsibleContent = CollapsiblePrimitive.CollapsibleContent
+const CollapsibleTrigger = CollapsiblePrimitive.CollapsibleTrigger;
 
-export { Collapsible, CollapsibleTrigger, CollapsibleContent }
+const CollapsibleContent = CollapsiblePrimitive.CollapsibleContent;
+
+export { Collapsible, CollapsibleTrigger, CollapsibleContent };
